@@ -1,5 +1,13 @@
 /* Requete media mobile*/
-/* */
+/* Ajout de police */
+@font-face {
+    font-family: "Shrikhand";
+    src: url(Shrikhand/Shrikhand-Regular.ttf);
+}
+@font-face {
+    font-family: "roboto";
+    src: url(roboto/Roboto-Black.ttf);
+}
 
 /* Loader de lancement */
 .loadcontent{
