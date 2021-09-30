@@ -1,3 +1,50 @@
+/* Loader */
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #f6f6f6;
+    -webkit-animation: fade 0ms 2s forwards;
+            animation: fade 0ms 2s forwards;
+  }
+  .loader .load {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem;
+  }
+  .loader .load .spinner {
+    position: absolute;
+    top: 30%;
+    padding: 1rem;
+    border-left: 0.5rem solid #9356dc;
+    border-right: 0.5rem solid #ff79da;
+    opacity: 0.5;
+    border-radius: 50%;
+    -webkit-animation: spin 2s forwards ease-in-out;
+            animation: spin 2s forwards ease-in-out;
+  }
+  .loader .load .load__text {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #aaaaaa;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .loader .load .load__text::after {
+    content: "";
+    -webkit-animation: blink 0.5s infinite;
+            animation: blink 0.5s infinite;
+  }
+/* html */
 html {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -84,7 +131,7 @@ html {
     left: 1.5rem;
     font-size: 1.5rem;
   }
-  
+/* Localisation */
   .localiser {
     background-color: #eaeaea;
     height: 50px;
@@ -106,7 +153,7 @@ html {
     margin-right: 1rem;
     margin-left: -1rem;
   }
-  
+  /* Fonctionnement */
   .conteneur-fonctionnement {
     height: 286px;
     display: -webkit-box;
@@ -154,32 +201,13 @@ html {
             align-items: center;
     background: #fff;
   }
-  @media only screen and (min-width:768px) and (max-width:1024px), only screen and (min-width:1024px) {
-    .fonctionnement {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap;
-      height: 200px;
-      border-radius: 1rem;
-      margin: 0.5rem;
-    }
-  }
+
   .fonctionnement__titre {
     position: absolute;
     top: 1.5rem;
     left: 1rem;
     font-size: 1.5rem;
     font-weight: 500;
-  }
-  @media only screen and (max-width:365px), only screen and (min-width:365px) and (max-width:768px) {
-    .fonctionnement__titre {
-      position: inherit;
-      padding-bottom: 1rem;
-    }
   }
   .fonctionnement__etape {
     width: 322px;
@@ -206,16 +234,7 @@ html {
   .fonctionnement__etape__description {
     padding-right: 1rem;
   }
-  @media only screen and (min-width:768px) and (max-width:1024px) {
-    .fonctionnement__etape {
-      max-width: 30%;
-    }
-  }
-  @media only screen and (min-width:1024px) {
-    .fonctionnement__etape {
-      max-width: 30%;
-    }
-  }
+ 
   .fonctionnement__etape:last-of-type {
     background: #f2eafb;
   }
@@ -288,52 +307,7 @@ html {
             box-shadow: 0 3px 10px 0px #5e5e5e;
   }
   
-  .loader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #f6f6f6;
-    -webkit-animation: fade 0ms 2s forwards;
-            animation: fade 0ms 2s forwards;
-  }
-  .loader .load {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 2rem;
-  }
-  .loader .load .spinner {
-    position: absolute;
-    top: 30%;
-    padding: 1rem;
-    border-left: 0.5rem solid #9356dc;
-    border-right: 0.5rem solid #ff79da;
-    opacity: 0.5;
-    border-radius: 50%;
-    -webkit-animation: spin 2s forwards ease-in-out;
-            animation: spin 2s forwards ease-in-out;
-  }
-  .loader .load .load__text {
-    position: absolute;
-    top: 50%;
-    font-size: 2rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    background: #aaaaaa;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  .loader .load .load__text::after {
-    content: "";
-    -webkit-animation: blink 0.5s infinite;
-            animation: blink 0.5s infinite;
-  }
-  
+ 
   .main-content {
     -webkit-animation: content-fade 0.05s 2s both;
             animation: content-fade 0.05s 2s both;
@@ -774,30 +748,19 @@ html {
       min-width: 15rem;
     }
   }
-  @media only screen and (max-width:365px) {
-    @-webkit-keyframes slide {
-      to {
-        min-width: 10rem;
-      }
-    }
+
     @keyframes slide {
       to {
         min-width: 10rem;
       }
     }
-  }
-  @media only screen and (min-width:1024px) {
-    @-webkit-keyframes slide {
-      to {
-        min-width: 13rem;
-      }
-    }
+  
     @keyframes slide {
       to {
         min-width: 13rem;
       }
     }
-  }
+  
   .fonctionnement {
     margin: 0 auto;
   }
@@ -822,29 +785,10 @@ html {
     font-size: 1.5rem;
     font-weight: 500;
   }
-  @media only screen and (min-width:1024px), only screen and (min-width:768px) and (max-width:1024px) {
-    nav {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
-      -webkit-box-pack: space-evenly;
-          -ms-flex-pack: space-evenly;
-              justify-content: space-evenly;
-    }
+  
     nav .container {
       min-width: 48%;
     }
-  }
-  @media only screen and (min-width:365px) and (max-width:768px) {
-    nav h1 {
-      padding-left: 0;
-    }
-  }
-  
   .container {
     border-radius: 1rem;
   }
@@ -863,16 +807,7 @@ html {
     -webkit-box-shadow: 0 3px 10px 0px #dddddd;
             box-shadow: 0 3px 10px 0px #dddddd;
   }
-  @media only screen and (min-width:768px) and (max-width:1024px) {
-    .restaurants__carte {
-      min-width: calc(0.5 *768px - 16px);
-    }
-  }
-  @media only screen and (min-width:1024px) {
-    .restaurants__carte {
-      width: calc(0.5 *1024px - 16px);
-    }
-  }
+
   .restaurants__carte__imagebox {
     max-width: 100%;
     height: 174px;
@@ -970,25 +905,13 @@ html {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
   }
-  @media only screen and (min-width:365px) and (max-width:768px), only screen and (min-width:768px) and (max-width:1024px) {
-    .restaurant__titre .titre__box {
-      width: 23rem;
-      margin: 0 auto;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-    }
-  }
+ 
   .restaurant__titre .titre__box h1 {
     padding-top: 2rem;
     font-family: "shrikhand", sans-serif;
     font-size: 1.8rem;
   }
-  @media only screen and (min-width:365px) and (max-width:768px), only screen and (min-width:768px) and (max-width:1024px), only screen and (min-width:1024px) {
-    .restaurant__titre .titre__box h1 {
-      font-size: 1.8rem;
-    }
-  }
+ 
   
   .restaurant {
     max-width: 100%;
@@ -1035,11 +958,7 @@ html {
     height: 3px;
     background: #92e2d0;
   }
-  @media only screen and (min-width:1024px) {
-    .restaurant__carte {
-      width: 100%;
-    }
-  }
+ 
   .restaurant .service {
     width: 100%;
     display: -webkit-box;
@@ -1057,14 +976,7 @@ html {
   .restaurant .service:nth-last-child(2) {
     padding-bottom: 2rem;
   }
-  @media only screen and (min-width:1024px) {
-    .restaurant .service {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
-    }
-  }
+
   .restaurant .button {
     margin: auto;
     display: -webkit-box;
@@ -1099,30 +1011,12 @@ html {
     -webkit-box-shadow: 0 3px 10px 0px #dddddd;
             box-shadow: 0 3px 10px 0px #dddddd;
   }
-  @media only screen and (max-width:365px) {
-    .restaurant__fiche {
-      max-width: 18rem;
-    }
-  }
-  @media only screen and (min-width:1024px) {
-    .restaurant__fiche {
-      max-width: 20rem;
-    }
-  }
+ 
   .restaurant__fiche__plat {
     min-width: 19.5rem;
     height: 100%;
   }
-  @media only screen and (max-width:365px) {
-    .restaurant__fiche__plat {
-      min-width: 15.5rem;
-    }
-  }
-  @media only screen and (min-width:1024px) {
-    .restaurant__fiche__plat {
-      min-width: 17.5rem;
-    }
-  }
+
   .restaurant__fiche__plat__nomplat {
     font-size: 1rem;
     font-weight: 500;
@@ -1132,11 +1026,7 @@ html {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  @media only screen and (max-width:365px) {
-    .restaurant__fiche__plat__nomplat {
-      font-size: 1rem;
-    }
-  }
+ 
   .restaurant__fiche__plat__description {
     padding: 0.5rem;
     font-weight: lighter;
@@ -1216,6 +1106,132 @@ html {
     font-size: 1.5rem;
     font-family: "shrikhand", sans-serif;
   }
+ 
+  /*# sourceMappingURL=style.css.map */
+
+  /* Responsive */
+  @media only screen and (min-width:768px) and (max-width:1024px), only screen and (min-width:1024px) {
+    .fonctionnement {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      height: 200px;
+      border-radius: 1rem;
+      margin: 0.5rem;
+    }
+  }  @media only screen and (max-width:365px), only screen and (min-width:365px) and (max-width:768px) {
+    .fonctionnement__titre {
+      position: inherit;
+      padding-bottom: 1rem;
+    }
+  }
+  @media only screen and (min-width:768px) and (max-width:1024px) {
+    .fonctionnement__etape {
+      max-width: 30%;
+    }
+  }
+  @media only screen and (min-width:1024px) {
+    .fonctionnement__etape {
+      max-width: 30%;
+    }
+  }
+  @media only screen and (max-width:365px) {
+    @-webkit-keyframes slide {
+      to {
+        min-width: 10rem;
+      }
+    }
+
+  @media only screen and (min-width:1024px) {
+    @-webkit-keyframes slide {
+      to {
+        min-width: 13rem;
+      }
+    }
+  @media only screen and (min-width:1024px), only screen and (min-width:768px) and (max-width:1024px) {
+    nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+    }
+  @media only screen and (min-width:365px) and (max-width:768px) {
+    nav h1 {
+      padding-left: 0;
+    }
+  }
+  @media only screen and (min-width:768px) and (max-width:1024px) {
+    .restaurants__carte {
+      min-width: calc(0.5 *768px - 16px);
+    }
+  }
+  @media only screen and (min-width:1024px) {
+    .restaurants__carte {
+      width: calc(0.5 *1024px - 16px);
+    }
+  }
+  @media only screen and (min-width:365px) and (max-width:768px), only screen and (min-width:768px) and (max-width:1024px) {
+    .restaurant__titre .titre__box {
+      width: 23rem;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
+  @media only screen and (min-width:365px) and (max-width:768px), only screen and (min-width:768px) and (max-width:1024px), only screen and (min-width:1024px) {
+    .restaurant__titre .titre__box h1 {
+      font-size: 1.8rem;
+    }
+  }
+  @media only screen and (min-width:1024px) {
+    .restaurant__carte {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width:1024px) {
+    .restaurant .service {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+    }
+  }
+  @media only screen and (max-width:365px) {
+    .restaurant__fiche__plat {
+      min-width: 15.5rem;
+    }
+  }
+  @media only screen and (max-width:365px) {
+    .restaurant__fiche {
+      max-width: 18rem;
+    }
+  }
+  @media only screen and (min-width:1024px) {
+    .restaurant__fiche {
+      max-width: 20rem;
+    }
+  }
+  @media only screen and (min-width:1024px) {
+    .restaurant__fiche__plat {
+      min-width: 17.5rem;
+    }
+  }
+  @media only screen and (max-width:365px) {
+    .restaurant__fiche__plat__nomplat {
+      font-size: 1rem;
+    }
+  }
   @media only screen and (min-width:768px) and (max-width:1024px), only screen and (min-width:1024px) {
     .footer__container {
       max-width: 1024px;
@@ -1233,4 +1249,3 @@ html {
               justify-content: space-between;
       max-height: 100px;
     }
-  }/*# sourceMappingURL=style.css.map */
