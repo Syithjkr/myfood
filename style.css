@@ -316,4 +316,9 @@ header .back {
   animation: blink 0.5s infinite;
 }
 
+.main-content {
+  -webkit-animation: content-fade 0.05s 2s both;
+  animation: content-fade 0.05s 2s both;
+}
+
 /*# sourceMappingURL=style.css.map */
