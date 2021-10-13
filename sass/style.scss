@@ -91,6 +91,10 @@ header{
             justify-content: center;
     -webkit-box-align: center;
           align-items: center;
+          i{
+              margin-right: 1rem;
+              margin-left: -1rem;
+          }
 }
 .loader{
     position: absolute;

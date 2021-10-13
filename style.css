@@ -91,6 +91,10 @@ header .back {
   -webkit-box-align: center;
   align-items: center;
 }
+.localiser i {
+  margin-right: 1rem;
+  margin-left: -1rem;
+}
 
 .loader {
   position: absolute;
