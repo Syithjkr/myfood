@@ -1,0 +1,6 @@
+/* Mixin */
+@mixin box-shadow {
+    -webkit-box-shadow: 0 3px 10px 0px $shadow;
+            box-shadow: 0 3px 10px 0px $shadow; 
+    
+}
