@@ -1,14 +1,6 @@
-/*couleurs */
-$color_primary: #9356DC;
-$color_secondary: #FF79DA;
-$color_tertiary: #99E2D0;
-$black: #000;
-$white: #fff;
-$shadow: #dddddd;
-$blanc: #f6f6f6;
-/*  Variable polices */
-$police: "Shrikland";
-$police1: "Roboto";
+@import url(libs/variables.scss);
+@import url(libs/reset.scss);
+@import url(libs/mixins.scss);
 
 html {
     -webkit-box-sizing: border-box;
@@ -54,48 +46,31 @@ html {
   
   body {
     font-size: 16px;
-    font-family: "roboto", sans-serif;
-    background: #f6f6f6;
+    font-family: $police1;
+    background:$blanc;
     margin: 0 auto;
   }
-  header {
-    height: 63px;
-    -webkit-box-shadow: 0 3px 10px 0px #dddddd;
-            box-shadow: 0 3px 10px 0px #dddddd;
-    .header__container{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-                -ms-flex-flow: row nowrap;
-                    flex-flow: row nowrap;
-        height: 100%;
-        -webkit-box-align: center;
-           -ms-flex-align: center;
-              align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-        max-width: 1024px;
-        margin: 0 auto;
-        position: relative;
-        color: #000;
-    }
-    h2{
-        font-family: $police;
-        font-weight: bold;
-        font-size: 2rem;
-    }
-    .back{
-        position: absolute;
-        top: 1rem;
-        left: 1.5rem;
-        font-size: 1.5rem;
-    }
-  }
+  .header
+{
+    display:flex;
+    justify-content:center;
+    background-color: $white;    
+}
+
+.header__logo
+{   
+    position:relative;
+    margin:1rem 100px;
+    /*background-color:yellow;*/
+}
+
+.header__logo_ohmyfood
+{
+  height:100%;    
+}
+
 .localiser{
-    background-color: #eaeaea;
+    background-color:$blanc1;
     height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -159,7 +134,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #fff;
+    background: $white;
     @media only screen and (min-width:768px) and (max-width:1024px), only screen and (min-width:1024px) {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -187,9 +162,9 @@ html {
 .fonctionnement__etape {
     width: 322px;
     height: 72px;
-    background: #f6f6f6;
-    -webkit-box-shadow: 0 3px 10px 0px #dddddd;
-            box-shadow: 0 3px 10px 0px #dddddd;
+    background:$blanc;
+    -webkit-box-shadow: 0 3px 10px 0px $shadow;
+            box-shadow: 0 3px 10px 0px $shadow;
     border-radius: 1.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -218,13 +193,8 @@ html {
               max-width: 30%;
             }
           }  
-  .fonctionnement__etape {
-      :last-of-type{
-          background: #f2aefb;
-      }
-  }  
   .fonctionnement__etape__icone.fas.fa-store {
-    color: #9356dc;
+    color: $color_primary;
   }
   .fonctionnement__etape__numero {
     position: absolute;
@@ -245,8 +215,8 @@ html {
             justify-content: center;
     min-width: 1.5rem;
     height: 1.5rem;
-    background: #9356dc;
-    color: #fff;
+    background: $color_primary;
+    color: $white;
     border-radius: 50%;
     margin-left: -1rem;
   }
@@ -272,13 +242,13 @@ html {
         -ms-flex-align: center;
             align-items: center;
     border-radius: 25px;
-    color: #fff;
-    font-family: "roboto", sans-serif;
-    background: #9356dc;
-    -webkit-box-shadow: 0 3px 10px 0px #aaaaaa;
-            box-shadow: 0 3px 10px 0px #aaaaaa;
-    background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), color-stop(20%, #9356dc), to(#ff79da));
-    background: linear-gradient(0deg, #9356dc 0%, #9356dc 20%, #ff79da 100%);
+    color: $white;
+    font-family: $police1;
+    background: $color_primary;
+    -webkit-box-shadow: 0 3px 10px 0px $grey;
+            box-shadow: 0 3px 10px 0px $grey;
+    background: -webkit-gradient(linear, left bottom, left top, from($color_primary), color-stop(20%, $color_primary), to($color_secondary));
+    background: linear-gradient(0deg, $color_primary 0%,$color_primary 20%, $color_secondary 100%);
     &:hover{
         -webkit-filter: opacity(0.7);
         filter: opacity(0.7);
@@ -292,7 +262,7 @@ html {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #f6f6f6;
+    background-color: $blanc;
     -webkit-animation: fade 0ms 2s forwards;
             animation: fade 0ms 2s forwards;
      .load {
@@ -307,8 +277,8 @@ html {
          position: absolute;
          top: 30%;
          padding: 1rem;
-         border-left: 0.5rem solid #9356dc;
-         border-right: 0.5rem solid #ff79da;
+         border-left: 0.5rem solid $color_primary;
+         border-right: 0.5rem solid $color_secondary;
          opacity: 0.5;
          border-radius: 50%;
          -webkit-animation: spin 2s forwards ease-in-out;
@@ -637,8 +607,8 @@ html {
     .fas{
         opacity: 0;
         :before{
-            background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), color-stop(20%, #9356dc), to(#ff79da));
-            background: linear-gradient(0deg, #9356dc 0%, #9356dc 20%, #ff79da 100%);
+            background: -webkit-gradient(linear, left bottom, left top, from($color_primary), color-stop(20%, $color_primary), to($color_secondary));
+            background: linear-gradient(0deg, $color_primary 0%,$color_primary 20%,$color_secondary 100%);
             -webkit-text-fill-color: transparent; 
         }
     }
@@ -688,8 +658,8 @@ html {
         .fa-heart{
             opacity: 0;
             &:before{
-                background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), color-stop(20%, #9356dc), to(#ff79da));
-                background: linear-gradient(0deg, #9356dc 0%, #9356dc 20%, #ff79da 100%);
+                background: -webkit-gradient(linear, left bottom, left top, from($color_primary), color-stop(20%, $color_primary), to($color_secondary));
+                background: linear-gradient(0deg, $color_primary 0%, $color_primary 20%, $color_secondary 100%);
                 -webkit-text-fill-color: transparent;
             }
         }
@@ -1200,5 +1170,5 @@ html {
                   justify-content: space-between;
           max-height: 100px;
         }
-  }
+        
 }

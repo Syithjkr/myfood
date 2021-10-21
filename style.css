@@ -45,46 +45,25 @@ html {
 
 body {
   font-size: 16px;
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto";
   background: #f6f6f6;
   margin: 0 auto;
 }
 
-header {
-  height: 63px;
-  -webkit-box-shadow: 0 3px 10px 0px #dddddd;
-  box-shadow: 0 3px 10px 0px #dddddd;
-}
-header .header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.header {
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  height: 100%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  max-width: 1024px;
-  margin: 0 auto;
+  background-color: white;
+}
+
+.header__logo {
   position: relative;
-  color: #000;
+  margin: 1rem 100px;
+  /*background-color:yellow;*/
 }
-header h2 {
-  font-family: "Shrikland";
-  font-weight: bold;
-  font-size: 2rem;
-}
-header .back {
-  position: absolute;
-  top: 1rem;
-  left: 1.5rem;
-  font-size: 1.5rem;
+
+.header__logo_ohmyfood {
+  height: 100%;
 }
 
 .localiser {
@@ -224,10 +203,6 @@ header .back {
     max-width: 30%;
   }
 }
-.fonctionnement__etape :last-of-type {
-  background: #f2aefb;
-}
-
 .fonctionnement__etape__icone.fas.fa-store {
   color: #9356dc;
 }
