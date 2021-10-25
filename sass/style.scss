@@ -921,7 +921,7 @@ html {
     }
     .titre__box h1 {
         padding-top: 2rem;
-        font-family: "shrikhand", sans-serif;
+        font-family: $police;
         font-size: 1.8rem;
       }
       @media only screen and (min-width:365px) and (max-width:768px), only screen and (min-width:768px) and (max-width:1024px), only screen and (min-width:1024px) {
@@ -1171,4 +1171,5 @@ html {
           max-height: 100px;
         }
         
+}
 }
