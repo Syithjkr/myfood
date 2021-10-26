@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>La Palette du goût</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="style_menu.css">
+        <!-- Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- recuperation de logo -->
+        <script src="https://kit.fontawesome.com/e7811f4cb9.js" crossorigin="anonymous"></script>
+        <!-- police Shrikland -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <!-- police roboto -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header>
+            <div class="header" >
+                
+                <div class="retour">
+                    <a href ="index.html"><i class="fas fa-arrow-left"></i></a>
+                </div>  
+            <!-- div contenant l'image du logo -->
+            <div class="header__logo">
+                <!-- image du logo Ohmyfood -->
+                <img class="header__logo__ohmyfood pic_fit" src="images/logo/ohmyfood.png" alt="logo Ohmyfood">
+            </div> 
+            <!-- fin div flexbox du header -->
+        </header>
+
+        <main>
+               <!--image du restaurant sélectionné-->
+               <section class="PhotoTable3">
+                <img class="pic_fit" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="3 À la française">                
+            </section>
+            
+            <article class="gastronomie">
+                
+                <article class="gastronomie__LaCarte">
+                    <div class="H_and_Heart">
+                        <h1>La palette du goût</h1>
+                        
+                        <div class="Container_coeur">
+                            <i class="fas fa-heart coeurplein"></i>
+                            <i class="far fa-heart coeurvide"></i>
+                        </div>
+                    </div>             
+                     
+
+                    <section class="entrées">
+                        <p class="SousTitre">ENTRÉES</p>
+                        <div class="entrées__choix slide-top">
+                            <div class="visible">
+                                <div class="intitule">
+                                    <p class="bold">Fricassée d'escargot </p>
+                                </div>
+                                <div class="detail_prix">
+                                    <div class="detail">
+                                        <p>Au piment d'Espelette  </p>
+                                    </div>
+                                    <div class="prix bold">
+                                        <p>25€</p>
+                                    </div>
+                                </div>  
+                            </div>  
+                            <div class="check">
+                                <i class="fas fa-check-circle rotation"></i>
+                            </div>
+                        </div>
+                        <div class="entrées__choix slide-top2">
+                            <div class="visible">
+                                <div class="intitule">
+                                    <p class="bold">Foie gras de canard mi-cuit </p>
+                                </div>
+                                <div class="detail_prix">
+                                    <div class="detail"><p>Et ses copeaux de truffe noire </p></div>
+                                    <div class="prix bold"><p>35€</p></div>
+                                </div>
+                            </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle rotation"></i>
+                            </div>    
+                        </div>
+                        <div class="entrées__choix slide-top3">
+                            <div class="visible">
+                                <div class="intitule">
+                                    <p class="bold">Oeuf au plat </p>
+                                </div>
+                                <div class="detail_prix">
+                                    <div class="detail"><p>Assaisonné à la truffe sur lit de caviar </p></div>
+                                    <div class="prix bold"><p>20€</p></div>
+                                </div> 
+                            </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle rotation"></i>
+                            </div>       
+                        </div>
+                    </section>
+
+                    <section class="plats">
+                        <p class="SousTitre">PLATS</p>
+                        <div class="plats__choix slide-top">
+                            <div class="visible">
+                                <div class="intitule">
+                                    <p class="bold">Filet de boeuf aux herbes </p>
+                                </div>
+                                <div class="detail_prix">
+                                    <div class="detail"> 
+                                        <p>Accompagné de sa ribambelle de légumes </p>
+                                    </div>                                    
+                                    <div class="prix bold">
+                                        <p>40€</p>
+                                    </div>
+                                </div> 
+                            </div>  
+                            <div class="check">
+                                <i class="fas fa-check-circle rotation"></i>
+                            </div>                                
+                        </div>
+                        <div class="plats__choix slide-top2">
+                            <div class="visible">
+                                <div class="intitule">
+                                    <p class="bold">Parmentier de queue de boeuf </p>
+                                </div>
+                                <div class="detail_prix">
+                                    <div class="detail"> 
+                                        <p>À la truffe noire sur sa purée de panais </p>
+                                    </div>
+                                    <div class="prix bold">
+                                        <p>35€</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle rotation"></i>
+                            </div>       
+                        </div>
+                        <div class="plats__choix slide-top3">
+                            <div class="visible">
+                                <div class="intitule">
+                                    <p class="bold">Filet de turbot </p>
+                                </div>
+                                <div class="detail_prix">
+                                    <div class="detail"> 
+                                        <p>Aux agrumes </p>
+                                    </div>
+                                    <div class="prix bold">
+                                        <p>44€</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle rotation"></i>
+                            </div>       
+                        </div>
+                    </section>
+
+                    <section class="desserts">
+                        <p class="SousTitre">DESSERTS</p>
+                        <div class="desserts__choix slide-top">
+                            <div class="visible">
+                                <div class="intitule">
+                                    <p class="bold">Paris-Brest </p>
+                                </div>
+                                <div class="detail_prix">
+                                    <div class="detail"> 
+                                        <p>Revisité </p>
+                                    </div>
+                                    <div class="prix bold">
+                                        <p>18€</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle rotation"></i>
+                            </div>       
+                        </div>
+                        <div class="desserts__choix slide-top2">
+                            <div class="visible">
+                                <div class="intitule">
+                                    <p class="bold">Macaron au chocolat d'exception </p>
+                                </div>
+                                <div class="detail_prix">
+                                    <div class="detail"> 
+                                        <p>Et glace à la vanille de Madagascar </p>
+                                    </div>
+                                    <div class="prix bold">
+                                        <p>22€</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle rotation"></i>
+                            </div>           
+                        </div>
+                        <div class="desserts__choix slide-top3">
+                            <div class="visible">
+                                <div class="intitule">
+                                    <p class="bold">Mousse au chocolat  </p>
+                                </div>
+                                <div class="detail_prix">
+                                    <div class="detail"> 
+                                        <p>Au piment d'Espelette et à la truffe noire </p>
+                                    </div>    
+                                    <div class="prix bold">
+                                        <p>23€</p>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="check">
+                                <i class="fas fa-check-circle rotation"></i>
+                            </div>     
+                        </div>
+                    </section>
+
+                </article> <!-- fin article gastronomie__LaCarte -->
+
+                <!--commander-->
+                <div class="Commander">
+                    <a href="#">
+                        <input class="Commander--input"  type="button" value="Commander">
+                    </a>
+                </div>
+
+            </article>
+        </main>
+
+        <footer class="footer">
+            <h3>ohmyfood</h3>
+            <div class="footer__bottom">
+                <a href="#">
+                    <div class="footer__bottom__row">
+                        <i class="fas fa-utensils"></i>
+                        <p>Proposer un restaurant</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="footer__bottom__row">
+                        <i class="fas fa-hands-helping"></i>
+                        <p>Devenir partenaire</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <p>Mentions légales</p>
+                    </div>
+                </a>
+                <a href="mailto:contact@ohmyfood.fr">
+                    <div>
+                        <p>Contact</p>
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

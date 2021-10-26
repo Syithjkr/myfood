@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+html, body, ul, li, h1, h2, h3, h4, p, img{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    margin: 0 auto;
+    background-color: $blanc;
+}
+h1, h2, h3{
+    font-size: 1rem;
+    font-family: $police;
+}
+p{
+    font-family: $police1;
+}
+img{
+    display: block;
+}
+a{
+    color: $black;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    z-index: 1;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: $white;
+    position: relative;
+    a:hover i
+{
+    font-weight: bolder;
+    color: $color_primary;
+    transition: transform  1.5s ease-in-out; 
+    transform: scale(2.5);
+    font-size: 20px;
+    color:$color_secondary;
+}
+}
+.header__logo__ohmyfood{
+    width: 100%;
+    height: 100%;
+    font-size: clamp(28px, 5vw, 68px);
+}
+.pic_fit{
+    object-fit: cover;
+}
+/* Header button */
+.retour{
+    position: absolute;
+    margin-top: 2.25rem;
+    top: -2.25%;
+    left: 5%;
+    padding-left: 2rem;
+    margin-top: 1.25rem;
+    margin-left: 1rem;
+    min-width:20px; 
+    min-height:20px;
+    font-size: 20px;
+    z-index:5;
+    font-size:18px
+    font-size:clamp(18px,5vw,32px)
+    ;font-weight:bold;
+    border:solid purple;
+    top:20px; left:20px;
+    top:35%;
+    left:5%;
+}
+.PhotoTable
+{
+    z-index:1;
+    width:100%; 
+    min-height:286px;
+    height:auto;
+    display:flex;
+    background: no-repeat center/50% url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: cover;
+}    
+.PhotoTable2
+{
+    z-index:1;
+    width:100%; 
+    min-height:286px;
+    height:auto;
+    display:flex;
+    background: no-repeat center/50% url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-size: cover;
+}    
+.PhotoTable3
+{
+    z-index:1;
+    width:100%; 
+    min-height:286px;
+    height:auto;
+    display:flex;
+     background: no-repeat center/50% url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-size: cover;
+}   
+.PhotoTable4
+{
+    z-index:1;
+    width:100%; 
+    min-height:286px;
+    height:auto;
+    display:flex;
+    background: no-repeat center/50% url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    background-size: cover;
+}     
