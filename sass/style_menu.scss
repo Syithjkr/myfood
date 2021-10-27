@@ -663,3 +663,37 @@ i.coeurplein:hover
     margin-left: auto;
     display:flex;justify-content: center;
 }
+.Commander--input
+{
+    cursor:pointer;
+    width:219px;
+    height:53px;
+    color:white;
+    background: #E16FDA;
+    background: -webkit-linear-gradient(to bottom right, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+    background: -moz-linear-gradient(to bottom right, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+    background: linear-gradient(to bottom right, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+    /*-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    border-radius: 25px; 
+    margin:20px auto 30px auto;/* à vérifier */
+    cursor: pointer;font-family: 'Roboto', sans-serif;  font-size:15px;
+    border:transparent;
+    /*box-shadow: 6px 6px 4px  #808080;*/
+    box-shadow: 6px 6px 4px  #e7e7e7;     
+    transition: box-shadow 0.3s, filter 0.3s; 
+    :hover
+{
+    filter: brightness(110%);
+    /*box-shadow: 6px 6px 4px  black;*/   box-shadow: 6px 6px 4px  #333;  
+}
+}
+/* footer */
+.footer
+{
+    display:flex;
+    flex-direction: column;
+    background-color:/*rgb(47, 47, 47);*/#353535;
+    margin-top:60px;
+    color:white;
+}
