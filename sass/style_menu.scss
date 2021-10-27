@@ -407,3 +407,103 @@ i.coeurplein:hover
     font-size:18px;
 }
 }
+.detail_prix
+{
+    display: flex;flex-direction:row;/*gap:5px;*/justify-content: space-between;   align-items:baseline;cursor: pointer;
+    /*border:solid purple;*/flex-wrap:nowrap; 
+    
+}
+.detail
+{
+    /*border:solid yellow;*/
+    flex:3;
+    margin-left:5px;
+    /*font-size:13px;*/font-size: 15px;   
+    overflow: hidden;
+    p
+{
+  /* Les deux règles suivantes sont nécessaires pour text-overflow 
+    - https://developer.mozilla.org/fr/docs/Web/CSS/text-overflow */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}   
+}
+.prix
+{
+    /*border:solid lightgreen;*/
+    flex:1;
+    text-align: end;
+    margin-right:15px;
+    margin-bottom:11px;/*font-size:13px;*/font-size:16px;
+}
+.check
+{
+    /*display: none;*/
+    cursor: pointer;    
+    /*transition: transform 330ms ease-in-out;*/
+    /*animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;*/
+    /*animation-fill-mode: backwards;*/
+    display:flex;
+    font-size:22px;
+    color:white;
+    background-color: #99E2D0; 
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    z-index:15;
+    height:100%; min-height:69px;
+    /*max-width:58px;width:100%;*/
+    border-bottom-right-radius: 20px;border-top-right-radius: 20px;
+    flex-wrap: wrap;
+
+    max-width:0px;width:0%;
+    margin-right: 0px;margin-left: auto;
+	/*transition-duration: 5.5s;*/transition-duration: 0.5s;
+	transition-timing-function: ease;
+}
+.entrées__choix:hover .check, .plats__choix:hover .check, .desserts__choix:hover .check /*pour faire apparaître le check*/ 
+{
+    display:flex;
+    font-size:22px;
+    color:white;
+    background-color: #99E2D0; 
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    z-index:15;
+    height:100%; min-height:69px;
+    max-width:58px;width:100%;
+    border-bottom-right-radius: 20px;border-top-right-radius: 20px;
+    flex-wrap: wrap;
+    
+    /*animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;*/
+    /*transition: margin-left 2s .5s;*/
+    /*transform: translate(-15px,0);*/
+
+    margin-right: 0px;
+	/*transition-duration: 5.5s;*/transition-duration: 0.5s;
+	transition-timing-function: ease;
+}
+.entrées__choix:hover i.rotation , .plats__choix:hover i.rotation , .desserts__choix:hover i.rotation /*pour faire tourner l'icône*/ 
+{
+    /*animation: rotate-center 3.6s ease-in-out both;*/animation: rotate-center 0.3s ease-in-out both;
+}
+/*.choix:hover::after    
+{
+    content:"after";
+    display:flex;
+    font-size:22px;
+    color:white;
+    background-color: #99E2D0; 
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    z-index:15;
+    height:100%; min-height:69px;
+    max-width:58px;width:100%;
+    border-bottom-right-radius: 20px;border-top-right-radius: 20px;
+    flex-wrap: wrap;
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}*/
