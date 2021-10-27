@@ -250,4 +250,126 @@ i.coeurplein:hover {
   opacity: 1;
 }
 
+@keyframes fillheart {
+  0% {
+    opacity: 0.25;
+    background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 24.25px;
+  }
+  25% {
+    opacity: 0.33;
+    background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 24.25px;
+  }
+  50% {
+    opacity: 0.5;
+    background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 24.25px;
+  }
+  75% {
+    opacity: 0.75;
+    background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 24.25px;
+  }
+  100% {
+    opacity: 1;
+    background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 25.5px;
+    right: 19.25px;
+    top: -35.75px;
+    /*font-size:25.75px;top:-35.75px;right:19.5px;*/
+  }
+}
+/*i.coeurplein:before, i.coeurvide:before {
+    display: initial;
+  }*/
+/**/
+.SousTitre {
+  margin-left: 15px;
+  margin-top: 40px;
+  padding-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  max-width: 41px;
+  text-align: left;
+  border-bottom: solid #99E2D0;
+  /*background-color:yellow;*/
+}
+
+.entrées {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 15px;
+  z-index: 15;
+  transition: all 1.5s ease-out;
+}
+
+.plats {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 15;
+}
+
+.desserts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 15;
+}
+
+.entrées__choix, .plats__choix, .desserts__choix {
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 15px;
+  width: 90%;
+  display: flex;
+  /*flex-direction: column;*/
+  gap: 5px;
+  padding-left: 10px;
+  overflow: hidden;
+  transition: transform 330ms ease-in-out;
+  animation-fill-mode: backwards;
+  /*border:solid greenyellow;*/
+  /*box-shadow: 6px 6px 4px  #808080;*/
+  box-shadow: 6px 6px 4px #e7e7e7;
+  cursor: pointer;
+}
+
+.visible {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  /*margin:0 15px;*/
+  overflow: hidden;
+  /*border:solid red;*/
+}
+
+/**/
+/*  https://www.pierre-giraud.com/html-css-apprendre-coder-cours/animation/
+    animation-name: slide-top; http://animista.net
+    animation-duration: Ns;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: Ns;
+
+*/
+
 /*# sourceMappingURL=style_menu.css.map */
