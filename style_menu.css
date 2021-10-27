@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(libs/variables.scss);
 @import url(libs/reset.scss);
 @import url(libs/mixins.scss);
@@ -57,6 +58,15 @@ header {
   /*border:solid orange;*/
   position: relative;
 }
+.header a:hover i {
+  /*font-weight: bolder;
+  color: #9356dc;
+  transition: transform  1.5s ease-in-out;*/
+  /* Animation */
+  /*transform: scale(2.5);*/
+  /*font-size: 20px;*/
+  color: #FF79DA;
+}
 
 .header__logo {
   position: relative;
@@ -95,6 +105,149 @@ header {
   /*top:20px; left:20px;*/
   top: 35%;
   left: 5%;
+}
+
+/* section Photo de la table */
+/*
+https://www.zonecss.fr/faq/les-images-et-les-css.html
+Vous pouvez en Css, faire en sorte qu'une image (img) s'adapte en largeur à son conteneur parent. 
+Pour cela vous devez utiliser la propriété Css width à 100% sur l'image et préciser la propriété Css height à auto.
+*/
+.PhotoTable {
+  z-index: 1;
+  width: 100%;
+  min-height: 286px;
+  height: auto;
+  display: flex;
+  /*
+      https://developer.mozilla.org/fr/docs/Web/CSS/background
+      Ici on utilise une seule image, centrée  
+      et remise à l'échelle 
+      background: no-repeat center/80% url("../img/image.png");
+  */
+  background: no-repeat center/50% url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: cover;
+}
+
+.PhotoTable2 {
+  z-index: 1;
+  width: 100%;
+  min-height: 286px;
+  height: auto;
+  display: flex;
+  /*
+      https://developer.mozilla.org/fr/docs/Web/CSS/background
+      Ici on utilise une seule image, centrée  
+      et remise à l'échelle 
+      background: no-repeat center/80% url("../img/image.png");
+  */
+  background: no-repeat center/50% url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-size: cover;
+}
+
+.PhotoTable3 {
+  z-index: 1;
+  width: 100%;
+  min-height: 286px;
+  height: auto;
+  display: flex;
+  /*
+      https://developer.mozilla.org/fr/docs/Web/CSS/background
+      Ici on utilise une seule image, centrée  
+      et remise à l'échelle 
+      background: no-repeat center/80% url("../img/image.png");
+  */
+  background: no-repeat center/50% url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+}
+
+.PhotoTable4 {
+  z-index: 1;
+  width: 100%;
+  min-height: 286px;
+  height: auto;
+  display: flex;
+  /*
+      https://developer.mozilla.org/fr/docs/Web/CSS/background
+      Ici on utilise une seule image, centrée  
+      et remise à l'échelle 
+      background: no-repeat center/80% url("../img/image.png");
+  */
+  background: no-repeat center/50% url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-size: cover;
+}
+
+/* article gastronomie */
+.gastronomie {
+  background-color: #f6f6f6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-color: #f6f6f6;
+  z-index: 5;
+  margin-top: -60px;
+  /*border: solid lime;*/
+}
+
+.gastronomie__LaCarte {
+  display: flex;
+  flex-direction: column;
+  /*gap:15px;*/
+  z-index: 15;
+  /*border:solid red;*/
+}
+
+/*.H_and_Heart
+{
+    border:solid orange;  
+}*/
+h1 {
+  margin: 30px auto 0 15px;
+  z-index: 15;
+  font-size: 30px;
+}
+
+/**/
+.Container_coeur {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  /*border:solid aqua;*/
+  /*background-color:aqua;*/
+}
+
+.coeurplein, .coeurvide {
+  font-size: 23.5px;
+  font-weight: 100;
+  position: absolute;
+  /*top:-70px*/
+  top: -35px;
+  right: 20px;
+  /*border:solid lightgreen;*/
+  /*color:white;*/
+  cursor: pointer;
+}
+
+i.coeurplein {
+  /*z-index:6;*/
+  opacity: 0;
+  z-index: 8;
+}
+
+i.coeurvide {
+  z-index: 6;
+  opacity: 1;
+}
+
+i.coeurvide:hover {
+  opacity: 0;
+  z-index: 1;
+}
+
+i.coeurplein:hover {
+  /*z-index:8;*/
+  animation: fillheart 0.3s linear forwards;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style_menu.css.map */
