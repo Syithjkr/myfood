@@ -1,3 +1,100 @@
+@import url(libs/variables.scss);
+@import url(libs/reset.scss);
+@import url(libs/mixins.scss);
+/*RAZ*/
+* {
+  box-sizing: border-box;
+}
 
+html, body, ul, li, h1, h2, h3, h4, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+}
+
+h1, h2, h3 {
+  font-size: 1rem;
+  font-family: "Shrikland";
+}
+
+p {
+  font-family: "Roboto";
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Fin RAZ */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  /*gap:5rem;*/
+  /*border:solid orange;*/
+  position: relative;
+}
+
+.header__logo {
+  position: relative;
+  /*flex:1; width:100%;height:100%;    */
+  margin: 1rem 100px;
+  /*background-color:yellow;*/
+  /*min-width:179px;min-height:32px;*/
+}
+
+.header__logo__ohmyfood {
+  width: 100%;
+  height: 100%;
+  /*border:solid pink;*/
+  font-size: clamp(28px, 5vw, 68px);
+}
+
+.pic_fit {
+  object-fit: cover;
+}
+
+/*header button*/
+.retour {
+  position: absolute;
+  /*margin-top:2.25rem;top:-2.25%;left:5%;*/
+  /*padding-left:2rem;*/
+  /*margin-top:1.25rem;*/
+  /*margin-left:1rem;*/
+  min-width: 20px;
+  min-height: 20px;
+  /*font-size: 20px;*/
+  z-index: 5;
+  /*font-size:18px*/
+  font-size: clamp(18px, 5vw, 32px);
+  font-weight: bold;
+  /*border:solid purple;*/
+  /*top:20px; left:20px;*/
+  top: 35%;
+  left: 5%;
+}
 
 /*# sourceMappingURL=style_menu.css.map */

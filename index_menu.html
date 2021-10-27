@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="UTF-8">
-        <title>La Palette du goût</title>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="style_menu.css">
-        <!-- Responsive -->
+        <meta charset="UTF-8">
+        <title>A la française</title>
+        
+        <!-- CSS --> 
+		<link rel="stylesheet" href="style_MENU.css">
+        <!-- pour la partie responsive -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- recuperation de logo -->
-        <script src="https://kit.fontawesome.com/e7811f4cb9.js" crossorigin="anonymous"></script>
-        <!-- police Shrikland -->
+        <!-- récupération des logos -->
+        <script src="https://kit.fontawesome.com/e7811f4cb9.js" crossorigin="anonymous"></script>  
+        <!-- police Shrikhand -->      
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         <!-- police roboto -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
+        
     </head>
 
     <body>
+        
         <header>
+            <!--div flexbox du header -->
             <div class="header" >
                 
                 <div class="retour">
                     <a href ="index.html"><i class="fas fa-arrow-left"></i></a>
                 </div>  
-            <!-- div contenant l'image du logo -->
-            <div class="header__logo">
-                <!-- image du logo Ohmyfood -->
-                <img class="header__logo__ohmyfood pic_fit" src="images/logo/ohmyfood.png" alt="logo Ohmyfood">
-            </div> 
-            <!-- fin div flexbox du header -->
-        </header>
 
+                <!--div contenant l'image du logo -->
+                <div class="header__logo">
+                    <!-- image du logo Ohmyfood -->
+                    <img class="header__logo__ohmyfood pic_fit" src="images/logo/ohmyfood.png" alt="logo Ohmyfood">
+                </div>         
+               
+            </div> <!-- fin div flexbox du header -->                  
+        </header>     
+        
         <main>
-               <!--image du restaurant sélectionné-->
-               <section class="PhotoTable3">
-                <img class="pic_fit" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="3 À la française">                
+
+            <!--image du restaurant sélectionné-->
+            <section class="PhotoTable">
+               <img class="pic_fit"  src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="menu à la française">           
             </section>
             
             <article class="gastronomie">
                 
                 <article class="gastronomie__LaCarte">
                     <div class="H_and_Heart">
-                        <h1>La palette du goût</h1>
+                        <h1>À la française</h1>
                         
                         <div class="Container_coeur">
                             <i class="fas fa-heart coeurplein"></i>
@@ -57,11 +64,11 @@
                         <div class="entrées__choix slide-top">
                             <div class="visible">
                                 <div class="intitule">
-                                    <p class="bold">Fricassée d'escargot </p>
+                                    <p class="bold">Tartare de poulpe acidulé  </p>
                                 </div>
                                 <div class="detail_prix">
                                     <div class="detail">
-                                        <p>Au piment d'Espelette  </p>
+                                        <p>Aux zestes d'orange  </p>
                                     </div>
                                     <div class="prix bold">
                                         <p>25€</p>
@@ -75,10 +82,10 @@
                         <div class="entrées__choix slide-top2">
                             <div class="visible">
                                 <div class="intitule">
-                                    <p class="bold">Foie gras de canard mi-cuit </p>
+                                    <p class="bold">Velouté de légumes d'antan </p>
                                 </div>
                                 <div class="detail_prix">
-                                    <div class="detail"><p>Et ses copeaux de truffe noire </p></div>
+                                    <div class="detail"><p>Carotte, panais, topinambour </p></div>
                                     <div class="prix bold"><p>35€</p></div>
                                 </div>
                             </div>
@@ -89,10 +96,10 @@
                         <div class="entrées__choix slide-top3">
                             <div class="visible">
                                 <div class="intitule">
-                                    <p class="bold">Oeuf au plat </p>
+                                    <p class="bold">Soupe à l'oignon </p>
                                 </div>
                                 <div class="detail_prix">
-                                    <div class="detail"><p>Assaisonné à la truffe sur lit de caviar </p></div>
+                                    <div class="detail"><p>Revisitée </p></div>
                                     <div class="prix bold"><p>20€</p></div>
                                 </div> 
                             </div>
@@ -107,11 +114,11 @@
                         <div class="plats__choix slide-top">
                             <div class="visible">
                                 <div class="intitule">
-                                    <p class="bold">Filet de boeuf aux herbes </p>
+                                    <p class="bold">Coquilles Saint-Jacques </p>
                                 </div>
                                 <div class="detail_prix">
                                     <div class="detail"> 
-                                        <p>Accompagné de sa ribambelle de légumes </p>
+                                        <p>Accompagnées d'une purée de panais </p>
                                     </div>                                    
                                     <div class="prix bold">
                                         <p>40€</p>
@@ -125,11 +132,11 @@
                         <div class="plats__choix slide-top2">
                             <div class="visible">
                                 <div class="intitule">
-                                    <p class="bold">Parmentier de queue de boeuf </p>
+                                    <p class="bold">Magret de canard </p>
                                 </div>
                                 <div class="detail_prix">
                                     <div class="detail"> 
-                                        <p>À la truffe noire sur sa purée de panais </p>
+                                        <p>Et parmentier de pommes de terre </p>
                                     </div>
                                     <div class="prix bold">
                                         <p>35€</p>
@@ -143,11 +150,11 @@
                         <div class="plats__choix slide-top3">
                             <div class="visible">
                                 <div class="intitule">
-                                    <p class="bold">Filet de turbot </p>
+                                    <p class="bold">Pigeonneau d’Ille-et-Vilaine </p>
                                 </div>
                                 <div class="detail_prix">
                                     <div class="detail"> 
-                                        <p>Aux agrumes </p>
+                                        <p>Sur son lit de gnocchis aux légumes </p>
                                     </div>
                                     <div class="prix bold">
                                         <p>44€</p>
@@ -165,11 +172,11 @@
                         <div class="desserts__choix slide-top">
                             <div class="visible">
                                 <div class="intitule">
-                                    <p class="bold">Paris-Brest </p>
+                                    <p class="bold">Pétales de violettes glacés </p>
                                 </div>
                                 <div class="detail_prix">
                                     <div class="detail"> 
-                                        <p>Revisité </p>
+                                        <p>Et purée de noisettes </p>
                                     </div>
                                     <div class="prix bold">
                                         <p>18€</p>
@@ -183,11 +190,11 @@
                         <div class="desserts__choix slide-top2">
                             <div class="visible">
                                 <div class="intitule">
-                                    <p class="bold">Macaron au chocolat d'exception </p>
+                                    <p class="bold">Fondant au chocolat </p>
                                 </div>
                                 <div class="detail_prix">
                                     <div class="detail"> 
-                                        <p>Et glace à la vanille de Madagascar </p>
+                                        <p>Revisité </p>
                                     </div>
                                     <div class="prix bold">
                                         <p>22€</p>
@@ -201,11 +208,11 @@
                         <div class="desserts__choix slide-top3">
                             <div class="visible">
                                 <div class="intitule">
-                                    <p class="bold">Mousse au chocolat  </p>
+                                    <p class="bold">Millefeuille croustillant </p>
                                 </div>
                                 <div class="detail_prix">
                                     <div class="detail"> 
-                                        <p>Au piment d'Espelette et à la truffe noire </p>
+                                        <p>Myrtilles et pâte d’amande </p>
                                     </div>    
                                     <div class="prix bold">
                                         <p>23€</p>
@@ -228,8 +235,8 @@
                 </div>
 
             </article>
-        </main>
-
+        </main> 
+                 
         <footer class="footer">
             <h3>ohmyfood</h3>
             <div class="footer__bottom">
@@ -257,5 +264,6 @@
                 </a>
             </div>
         </footer>
+        
     </body>
 </html>
