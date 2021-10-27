@@ -699,5 +699,14 @@ i.coeurplein:hover {
   }
 }
 /**/
+.Commander {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  /*padding-left:92px;*/
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=style_menu.css.map */
