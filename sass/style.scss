@@ -1,4 +1,6 @@
-@import url(libs/reset.scss);
+@use url(libs/reset.scss);
+@use url(libs/mixin.scss);
+@use url(libs/variable.scss);
 
 *{
   box-sizing: border-box;
