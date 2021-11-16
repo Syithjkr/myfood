@@ -1,7 +1,4 @@
 @charset "UTF-8";
-@import url(libs/variables.scss);
-@import url(libs/reset.scss);
-@import url(libs/mixins.scss);
 * {
   box-sizing: border-box;
 }
@@ -480,27 +477,26 @@ a.fonctions__options__choix:hover i {
   position: absolute;
   top: -70px;
   right: 20px;
+  cursor: pointer;
 }
-
-i.coeurplein {
-  /*z-index:6;*/
+i.coeurplein{
+  /*z-index:6; */
   opacity: 0;
   z-index: 8;
 }
-i.coeurplein :hover {
-  /*z-index:8;*/
-  animation: fillheart 0.3s linear forwards;
-  opacity: 1;
-}
-
-i.coeurvide {
+i.coeurvide{
   z-index: 6;
   opacity: 1;
 }
-i.coeurvide :hover {
+i.coeurvide:hover{
   opacity: 0;
   z-index: 1;
 }
+i.coeurplein:hover{
+  /*z-index:8; */
+  animation: fillheart 0.3s linear forwards;
+}
+
 
 @keyframes fillheart {
   0% {
