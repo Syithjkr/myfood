@@ -274,7 +274,7 @@ h1 {
 
 .button:hover {
   opacity: 8;
-  background-color: #AB65ED;
+  background-color: #f5edff81;
 }
 
 /* article fonctions */
@@ -415,9 +415,7 @@ a.fonctions__options__choix:hover i {
   box-shadow: 6px 6px 4px #e7e7e7;
 }
 .restaurants__ContainerFlex__Resto :hover .class_bold {
-  color: #9356DC;
   border-radius: 25px;
-  background-color: #f5edff;
 }
 
 .class_top {
