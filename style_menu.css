@@ -1,8 +1,4 @@
 @charset "UTF-8";
-@import url(libs/variables.scss);
-@import url(libs/reset.scss);
-@import url(libs/mixins.scss);
-/*RAZ*/
 * {
   box-sizing: border-box;
 }
@@ -106,6 +102,75 @@ header {
   top: 35%;
   left: 5%;
 }
+.menu__heading {
+  grid-area: heading;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* code for the likeable heart */
+}
+
+.menu__heading--text {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 100;
+  font-size: clamp(2.2rem, 1.25rem + 3.25vw, 4rem);
+}
+
+.menu__heading--heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10%;
+  position: relative;
+}
+
+.menu__heading--heart::before {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: normal;
+  font-size: 3rem;
+  opacity: 1;
+  -webkit-transition: opacity 400ms;
+  -o-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+.menu__heading--heart::after {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff7ad9), to(#9256dc));
+  background: -o-linear-gradient(bottom, #ff7ad9 0%, #9256dc 100%);
+  background: linear-gradient(0deg, #ff7ad9 0%, #9256dc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  -webkit-transition: opacity 400ms;
+  -o-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+.menu__heading--heart:hover::before {
+  opacity: 0;
+}
+
+.menu__heading--heart:hover::after {
+  opacity: 1;
+}
+
 
 /* section Photo de la table */
 /*
@@ -188,113 +253,7 @@ Pour cela vous devez utiliser la propriété Css width à 100% sur l'image et pr
   /*border: solid lime;*/
 }
 
-.gastronomie__LaCarte {
-  display: flex;
-  flex-direction: column;
-  /*gap:15px;*/
-  z-index: 15;
-  /*border:solid red;*/
-}
 
-/*.H_and_Heart
-{
-    border:solid orange;  
-}*/
-h1 {
-  margin: 30px auto 0 15px;
-  z-index: 15;
-  font-size: 30px;
-}
-
-/**/
-.Container_coeur {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: relative;
-  /*border:solid aqua;*/
-  /*background-color:aqua;*/
-}
-
-.coeurplein, .coeurvide {
-  font-size: 23.5px;
-  font-weight: 100;
-  position: absolute;
-  /*top:-70px*/
-  top: -35px;
-  right: 20px;
-  /*border:solid lightgreen;*/
-  /*color:white;*/
-  cursor: pointer;
-}
-
-i.coeurplein {
-  /*z-index:6;*/
-  opacity: 0;
-  z-index: 8;
-}
-
-i.coeurvide {
-  z-index: 6;
-  opacity: 1;
-}
-
-i.coeurvide:hover {
-  opacity: 0;
-  z-index: 1;
-}
-
-i.coeurplein:hover {
-  /*z-index:8;*/
-  animation: fillheart 0.3s linear forwards;
-  opacity: 1;
-}
-
-@keyframes fillheart {
-  0% {
-    opacity: 0.25;
-    background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 24.25px;
-  }
-  25% {
-    opacity: 0.33;
-    background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 24.25px;
-  }
-  50% {
-    opacity: 0.5;
-    background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 24.25px;
-  }
-  75% {
-    opacity: 0.75;
-    background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 24.25px;
-  }
-  100% {
-    opacity: 1;
-    background: linear-gradient(to top, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 25.5px;
-    right: 19.25px;
-    top: -35.75px;
-    /*font-size:25.75px;top:-35.75px;right:19.5px;*/
-  }
-}
 /*i.coeurplein:before, i.coeurvide:before {
     display: initial;
   }*/
@@ -699,7 +658,11 @@ i.coeurplein:hover {
   }
 }
 /**/
-.Commander {
+.button {
+  border: none;
+}
+
+.btn {
   margin-top: 50px;
   margin-bottom: 80px;
   /*padding-left:92px;*/
@@ -707,34 +670,49 @@ i.coeurplein:hover {
   margin-left: auto;
   display: flex;
   justify-content: center;
+  background: -o-linear-gradient(95deg, #9256dc 0%, #ff7ad9 100%);
+  background: linear-gradient(-5deg, #9256dc 0%, #ff7ad9 100%);
+  color: #fff;
+  cursor: pointer;
+  padding: 1em 1.5em;
+  border-radius: 5rem;
+  min-width: 200px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-box-shadow: 0rem 0.3rem 0.6rem #b3b3b3;
+  box-shadow: 0rem 0.3rem 0.6rem #b3b3b3;
+  -webkit-transition: -webkit-box-shadow 200ms 100ms cubic-bezier(0.47, 0, 0.75, 0.72);
+  transition: -webkit-box-shadow 200ms 100ms cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: box-shadow 200ms 100ms cubic-bezier(0.47, 0, 0.75, 0.72);
+  transition: box-shadow 200ms 100ms cubic-bezier(0.47, 0, 0.75, 0.72);
+  transition: box-shadow 200ms 100ms cubic-bezier(0.47, 0, 0.75, 0.72), -webkit-box-shadow 200ms 100ms cubic-bezier(0.47, 0, 0.75, 0.72);
+  /*after for changing the background color when btn is hovered */
 }
 
-.Commander--input {
-  cursor: pointer;
-  width: 219px;
-  height: 53px;
-  color: white;
-  background: #E16FDA;
-  background: -webkit-linear-gradient(to bottom right, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
-  background: -moz-linear-gradient(to bottom right, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
-  background: linear-gradient(to bottom right, #E16FDA 0%, #E270DA 43%, #A55CDB 70%, #AB65ED 100%);
-  /*-webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
-  border-radius: 25px;
-  margin: 20px auto 30px auto;
-  /* à vérifier */
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  border: transparent;
-  /*box-shadow: 6px 6px 4px  #808080;*/
-  box-shadow: 6px 6px 4px #e7e7e7;
-  transition: box-shadow 0.3s, filter 0.3s;
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -o-linear-gradient(95deg, #9256dc 0%, #ff7ad9 80%);
+  background: linear-gradient(-5deg, #9256dc 0%, #ff7ad9 80%);
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 200ms cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: opacity 200ms cubic-bezier(0.47, 0, 0.75, 0.72);
+  transition: opacity 200ms cubic-bezier(0.47, 0, 0.75, 0.72);
 }
-.Commander--input :hover {
-  filter: brightness(110%);
-  /*box-shadow: 6px 6px 4px  black;*/
-  box-shadow: 6px 6px 4px #333;
+
+.btn:hover {
+  -webkit-box-shadow: 0rem 0.5rem 0.8rem #999999;
+  box-shadow: 0rem 0.5rem 0.8rem #999999;
+}
+
+.btn:hover::after {
+  opacity: 1;
 }
 
 /* footer */
