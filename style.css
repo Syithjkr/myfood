@@ -257,7 +257,7 @@ h1 {
   width: 90%;
 }
 
-.descriptif__input--button {
+.button {
   margin-top: 50px;
   margin-bottom: 80px;
   /*padding-left:92px;*/
@@ -285,13 +285,13 @@ h1 {
   /*af
   /*text-align: center;*/
 }
-.descriptif__input--button p {
+.button p {
   color: white;
   text-align: center;
   margin-top: 17px;
   font-weight: 500;
 }
-.descriptif__input--button p:hover {
+.button p:hover {
   filter: brightness(110%);
   box-shadow: 6px 6px 4px #333;
 }
