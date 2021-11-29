@@ -585,13 +585,11 @@ i.coeurplein:hover {
   color: white;
 }
 
-footer > h3 {
-  margin-left: 15px;
-  font-family: "shrikhand", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 25px;
-  margin-top: 25px;
+footer>h3
+{
+  margin-left:15px;   
+  font-size:  18px;   font-weight: 400;
+  margin-bottom:25px; margin-top:25px;
 }
 
 .footer__bottom {
